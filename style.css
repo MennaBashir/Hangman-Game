@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{   
+ font-family: Tahoma,Arial;
+}
+.container{
+    margin: 20px auto;
+    width: 600px;
+}
+
+hr{
+    border: 1px solid #eee;
+}
+.disapl{
+    display: none;
+}
+.game-info{
+    display: flex;
+}
+.game-info .game-name{
+flex: 1;
+}
+.game-info .category{
+    flex: 1;
+    text-align: right;
+}
+.game-info .category span{
+    text-transform: capitalize;
+    color: #e91e63;
+    font-weight: bold;
+    padding: 5px;
+}
+.letters{
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+}
+.letters .letter-box{
+    width: 55px;
+    display: inline-block;
+    height: 55px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 55px;
+}
+.letters-guess{
+    margin: 10px auto;
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 104px;
+}
+.letters-guess span{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    background-color: #fdfdfd;
+    border-bottom: 3px solid #222;
+    transition: .3s;
+}
+.letters .letter-box.clicked{
+    background-color: #222;
+    opacity: .2;
+    pointer-events: none;
+} 
+.letters.Block{
+    pointer-events: none;
+}
+.finished{
+    font-size: 30px;
+    width: fit-content;
+    margin: auto;
+    color: #e91e63;
+    height: 68px;
+    background-color: #009688;
+    padding: 10px;
+    font-weight: bold;
+    line-height: 47px;
+    display: none;
+
+}
+.succes{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: brown;
+    border: 1px outset whitesmoke;
+    padding: 6px;
+    letter-spacing: 1.5px;
+    display: none;
+}
